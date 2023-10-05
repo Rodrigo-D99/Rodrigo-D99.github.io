@@ -1,0 +1,109 @@
+
+
+body{
+    background: var(--violeta-fondo-p-sombra-1, #0F0026);
+}
+
+header{
+    background-color: #5200D7;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    width: 1729px;
+    height: 70px;
+}
+
+h1{
+    display: flex;
+    width: 232px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 15px;
+    color: var(--Blanco, #FFF);
+    font-family: inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: 80px;
+}
+
+.contenedor_header {
+    display: flex;
+    justify-content:flex-start;
+    min-height: 70px;
+    text-align:center;
+}
+
+.imgPrefil{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 50px;
+    width: 50px;
+
+    right: 20px;
+}
+
+.btn_menu {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 20px;
+    gap: 8px;
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+}
+
+.btn_menu:hover{
+    transition: 600ms;
+    background-color:#550BB7;
+
+}
+.line {
+    background-color: #000000;
+    height: 6px;
+    width: 40px;
+    border-radius: 3px;
+    transition: 1s;
+}
+
+.active .line:nth-child(1) {
+    transform: translateY(12px) rotate(135deg);
+}
+
+.active .line:nth-child(2) {
+    transform: scale(0);
+}
+
+.active .line:nth-child(3) {
+    transform: translateY(-16px) rotate(-135deg);
+}
+
+.logopagina {
+    background: url(".git /img/logo_mini.jpg"), 2px 49px / 100% 275% no-repeat;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;  
+    width: 260px;
+    height: 60px;
+    left: 60px;
+    top: 5px;
+    font-size: larger;
+} 
+.imgLogo{
+    bottom: 30px;
+    width: 150px;
+    height: 70px;
+}
+
+
+
