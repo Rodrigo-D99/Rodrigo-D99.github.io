@@ -1,8 +1,16 @@
 "use strict";
 //Menu Responsive
 let burger = document.querySelector(".btn_menu");
-
 burger.addEventListener("click", () =>
-    burger.classList.toggle("active"));
+burger.classList.toggle("active"));
 
-document.querySelector(".btn_menu").addEventListener("click", toggleMenu);
+burger.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+    document.querySelector(".lista_nav").classList.toggle("show");
+}
+
+let perfil = document.querySelector(".btn_perfil").addEventListener("click", toggleMenuPerfil);
+function toggleMenuPerfil() {
+    document.querySelector(".perfil_nav").classList.toggle("show");
+}

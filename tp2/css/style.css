@@ -1,16 +1,113 @@
 
+:root {
+
+     /*Colores*/
+    --violeta-fondo-psombra1: rgba(15, 0, 38, 1);
+    --violeta-oscuro-psombra2: rgba(39, 0, 102, 1);
+    --violeta-azulado-psombra3: rgba(82, 0, 215, 1);
+    --violeta-primario: rgba(100, 17, 206, 1);
+    --violeta-degradado-pluz1: rgba(147, 39, 255, 0.7);
+    --violeta-claro-pluz2: rgba(197, 138, 255, 1);
+    --negro: rgba(7, 4, 4, 1);
+    --negro-75: rgba(7, 4, 4, 0.75);
+    --negro-25: rgba(7, 4, 4, 0.25);
+    --blanco: rgba(255, 255, 255, 1);
+    --blanco-75: rgba(255, 255, 255, 0.75);
+    --blanco-50: rgba(255, 255, 255, 0.5);
+    --verde: rgba(75, 186, 65, 1);
+    --verde-oferta: rgba(20, 91, 14, 0.7);
+    --azul-claro: rgba(0, 87, 255, 1);
+    --amarillo: rgba(255, 245, 0, 1);
+    --rojo: rgba(255, 0, 0, 0.75);
+
+    /*Fuentes H1*/
+    --h1-font-family: "Inter-Bold", Helvetica;
+    --h1-font-weight: 700;
+    --h1-font-size: 40px;
+    --h1-letter-spacing: -0.8px;
+    --h1-line-height: 80px;
+    --h1-font-style: normal;
+
+     /*Fuentes H2*/
+    --h2-font-family: "Inter-Bold", Helvetica;
+    --h2-font-weight: 700;
+    --h2-font-size: 32px;
+    --h2-letter-spacing: -0.64px;
+    --h2-line-height: 80px;
+    --h2-font-style: normal;
+
+     /*Fuentes H3*/
+    --h3-font-family: "Inter-Bold", Helvetica;
+    --h3-font-weight: 700;
+    --h3-font-size: 24px;
+    --h3-letter-spacing: -0.48px;
+    --h3-line-height: normal;
+    --h3-font-style: normal;
+
+     /*Fuentes H4*/
+    --h4-bold-font-family: "Inter-Bold", Helvetica;
+    --h4-bold-font-weight: 700;
+    --h4-bold-font-size: 18px;
+    --h4-bold-letter-spacing: -0.36px;
+    --h4-bold-line-height: normal;
+    --h4-bold-font-style: normal;
+    --h4-bold-subrallado-font-family: "Inter-Bold", Helvetica;
+    --h4-bold-subrallado-font-weight: 700;
+    --h4-bold-subrallado-font-size: 18px;
+    --h4-bold-subrallado-letter-spacing: -0.36px;
+    --h4-bold-subrallado-line-height: normal;
+    --h4-bold-subrallado-font-style: normal;
+    --h4-regular-font-family: "Inter-Regular", Helvetica;
+    --h4-regular-font-weight: 400;
+    --h4-regular-font-size: 18px;
+    --h4-regular-letter-spacing: -0.36px;
+    --h4-regular-line-height: normal;
+    --h4-regular-font-style: normal;
+
+     /*Fuentes P*/
+    --p1-bold-font-family: "Inter-Bold", Helvetica;
+    --p1-bold-font-weight: 700;
+    --p1-bold-font-size: 14px;
+    --p1-bold-letter-spacing: -0.28px;
+    --p1-bold-line-height: 50px;
+    --p1-bold-font-style: normal;
+    --p2-bold-tachado-font-family: "Inter-Regular", Helvetica;
+    --p2-bold-tachado-font-weight: 400;
+    --p2-bold-tachado-font-size: 14px;
+    --p2-bold-tachado-letter-spacing: -0.28px;
+    --p2-bold-tachado-line-height: 80px;
+    --p2-bold-tachado-font-style: normal;
+    --p3-regular-font-family: "Inter-Regular", Helvetica;
+    --p3-regular-font-weight: 400;
+    --p3-regular-font-size: 14px;
+    --p3-regular-letter-spacing: -0.28px;
+    --p3-regular-line-height: 20px;
+    --p3-regular-font-style: normal;
+    --p4-regular-subrallado-font-family: "Inter-Regular", Helvetica;
+    --p4-regular-subrallado-font-weight: 400;
+    --p4-regular-subrallado-font-size: 14px;
+    --p4-regular-subrallado-letter-spacing: 0px;
+    --p4-regular-subrallado-line-height: normal;
+    --p4-regular-subrallado-font-style: normal;
+
+     /*Sombras*/
+    --sombra-1: 0px 0px 20px 20px rgba(100, 17, 206, 0.5);
+    --collection-1-gris-85: rgba(168, 168, 168, 0.85);
+}
 
 body{
-    background: var(--violeta-fondo-p-sombra-1, #0F0026);
+    background: var(--violeta-fondo-psombra1);
 }
 
 header{
-    background-color: #5200D7;
+    background-color:var(--violeta-primario);
     display: flex;
     align-items:center;
     justify-content:space-between;
-    width: 1729px;
+    width:100%;
     height: 70px;
+    position: sticky;
+    
 }
 
 h1{
@@ -21,14 +118,21 @@ h1{
     justify-content: center;
     position: absolute;
     left: 15px;
-    color: var(--Blanco, #FFF);
-    font-family: inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700px;
+    color: var(--blanco);
+    font-family: var(--h1-font-family);
+    font-size: var(--h1-font-size);
+    font-style: var(--h1-font-style);
+    font-weight: var(--h1-font-weight);
     line-height: 80px;
 }
-
+h2{
+    color: var(--blanco);
+    font-size: var(--h2-font-size);
+}
+p{  
+    color: var(--blanco);
+    position: absolute;
+}
 .contenedor_header {
     display: flex;
     justify-content:flex-start;
@@ -36,14 +140,13 @@ h1{
     text-align:center;
 }
 
-.imgPrefil{
+.imgPerfil{
     position:relative;
     display:flex;
     justify-content: center;
     align-items:center;
     height: 50px;
     width: 50px;
-
     right: 20px;
 }
 
@@ -59,15 +162,16 @@ h1{
     height: 50px;
     width: 50px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .btn_menu:hover{
     transition: 600ms;
-    background-color:#550BB7;
+    background-color:var(--violeta-primario);
 
 }
 .line {
-    background-color: #000000;
+    background-color: var(--negro);
     height: 6px;
     width: 40px;
     border-radius: 3px;
@@ -86,8 +190,8 @@ h1{
     transform: translateY(-16px) rotate(-135deg);
 }
 
-.logopagina {
-    background: url(".git /img/logo_mini.jpg"), 2px 49px / 100% 275% no-repeat;
+.logoPagina {
+    background: url("/tp2/img/logo_mini.jpg"), 2px 49px / 100% 275% no-repeat;
     position: relative;
     display:flex;
     justify-content: center;
@@ -105,5 +209,153 @@ h1{
     height: 70px;
 }
 
+.search {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    left:80%;
+    top: 15px;
+    width: 540px;
+    height: 40px;
+    background-color: var(--violeta-degradado-pluz1);
+    border-radius: 70px;
+    }
+.search .buscar {
+   position: absolute;
+    height: 25px;
+    top: 5px;
+    left: 70px;
+    font-family: var(--h3-font-family);
+    font-weight: var(--h3-font-weight);
+    color: var(--negro);
+    text-align: left;
+    background-color: var(--violeta-claro-pluz2);
+    font-size: var(--h3-font-size);
+    letter-spacing: var(--h3-letter-spacing);
+    line-height: var(--h3-line-height);
+    white-space: nowrap;
+    font-style: var(--h3-font-style);
+    border-radius: 70px;
+    }
+.search .busqueda {
+    position: absolute;
+    width: 37px;
+    height: 30px;
+    top: 5px;
+    left: 18px;
+    }
+.contenedor_navs{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.lista_nav,.perfil_nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+.lista_nav.show{
+    display:flex;
+    border-radius: 0px 0px 10px 0px;
+    background: var(--violeta-degradado-p-luz-1, rgba(147, 39, 255, 0.70));
+    transition: 1s ease;
+  
+}
+
+.perfil_nav.show{
+    display:flex;
+    border-radius: 0px 0px 0px 10px;
+    background: var(--violeta-degradado-p-luz-1, rgba(147, 39, 255, 0.70));
+    transition: 1s ease;
+}
+
+.item{
+    position: relative;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    top: 20px;
+    margin-left:20px;
+    margin-right:20px;
+}
+.item:last-child{
+    margin-bottom:40px;
+}
+.item a{
+    color: var(--blanco);
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+    gap: 10px;
+}
+.separador{
+    width: 100%;
+}
+
+.item a:hover {
+    border-radius: 10px;
+    background: var(--violeta-azulado-p-sombra-3, #5200D7);
+    transition: all 300ms ease;
+}
 
 
+footer{
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+    text-align: center;
+    position: sticky;
+}
+footer .overlap-group {
+    position: relative;
+    height: 500px;
+    background-color: var(--violeta-degradado-pluz1);
+}
+footer .overlap{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background-color: var(--violeta-azulado-psombra3);
+    
+
+}
+footer .overlap img {
+    top: 10px;
+    position: relative;
+    width: auto;
+    height:60px;
+}
+footer .logoPaginaFooter {
+    background: url("/tp2/img/logo.jpg"), 2px 49px / 100% no-repeat;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;  
+    width: 260px;
+    height: 160px;
+    left: 60px;
+    top: 20%;
+    font-size: larger;
+} 
+
+footer .derechos {
+    position:relative;
+    top: 40%;
+    width: 100%;
+    height: 100%;
+    font-family: var(--p3-regular-font-family);
+    font-weight: var(--p3-regular-font-weight);
+    color: var(--blanco-75);
+    font-size: var(--p3-regular-font-size);
+    letter-spacing: var(--p3-regular-letter-spacing);
+    line-height: var(--p3-regular-line-height);
+    font-style: var(--p3-regular-font-style);
+}
