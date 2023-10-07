@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--blanco);
+    text-decoration: none;
+}
 :root {
 
     /*Colores*/
@@ -98,7 +104,7 @@
 body{
     background: var(--violeta-fondo-psombra1);
 }
-.login, .registro.mostrar {
+.login, .registro{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -110,17 +116,7 @@ body{
     left: 25%;
 }
 .registro{
-    display:none ;
-}
-.registro.esconder{
-    display:none ;
-}
-
-.login.esconder{
     display: none;
-}
-.login.mostrar{
-    display: flex;
 }
  .no-tienes-cuenta {
     position: absolute;
@@ -166,6 +162,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     background-color: var(--azul-claro);
     border-radius: 25px;
     width: 360px;
@@ -187,12 +184,9 @@ body{
 }
 
 .facebook {
-    position: absolute;
     width: 24px;
     height: 24px;
-    top: 15px;
-    left: 19px;
-    background-image: url("/img/social_icon/Facebook.png");
+    background-image: url("../img/social_icon/Facebook.png");
     background-size: 100% 100%;
 }
 
@@ -210,18 +204,15 @@ body{
 }
 
 .google {
-    position: absolute;
     width: 24px;
     height: 24px;
-    top: 15px;
-    left: 19px;
-    background-image: url("/img/social_icon/google.png");
+    background-image: url("../img/social_icon/google.png");
     background-size: 100% 100%;
 }
 
 .text-wrapper-3 {
     color: var(--negro);
-    position: absolute;
+    text-decoration: none;
     width: 236px;
     height: 14px;
     font-family: var(--h4-regular-font-family);
@@ -235,11 +226,13 @@ body{
 }
 
 .separador {
-    margin-top: 10px;
+
     width: 100%;
 }
 
 .login .inicio-sesion, .registro .inicio-sesion {
+    margin-top: 50px;
+    margin-bottom: 40px;
     background: linear-gradient(180deg, rgb(85.48, 10.66, 182.75) 0%, rgba(51.49, 15.61, 79.69, 0.9) 100%);
     border: 0;
 }
@@ -259,36 +252,39 @@ body{
 }
 
 .re-captcha {
+    margin-top: 30px;
     width: 360px;
     height: 54px;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
-.overlap-group {
+.terminos{
+    height: 30px;
+
+}
+.overlap-group,.terminos-group {
     position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     width: 364px;
     height: 58px;
-    top: -2px;
-    left: -2px;
-    background-color: var(--blanco-75);
+    background-color: var(--blanco-50);
     border: 2px solid;
-    border-color: var(--blanco-50);
+    border-color: var(--blanco-75);
 }
-
+.terminos-group{
+    background-color:var(--negro);
+    border: 0;
+    
+}
 .text-wrapper-5 {
-    position: absolute;
-    width: 140px;
-    height: 18px;
-    top: 17px;
-    left: 70px;
     font-family: var(--h4-regular-font-family);
     font-weight: var(--h4-regular-font-weight);
-    color: #000000;
+    color: var(--blanco);
     font-size: var(--h4-regular-font-size);
-    text-align: center;
     letter-spacing: var(--h4-regular-letter-spacing);
     line-height: var(--h4-regular-line-height);
-    white-space: nowrap;
     font-style: var(--h4-regular-font-style);
 }
 
@@ -311,7 +307,7 @@ body{
 
 
 
-.btn-check {
+.btn-check,.btn-check2 {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -320,52 +316,51 @@ body{
     border-radius: 2px;
     cursor: pointer;
 }
+.btn-check2{
+    top: 17px;
+    width: 24px;
+    height: 24px;
+}
 
 .done {
     display: none;
     position: relative;
     width: 24px;
     height: 24px;
-    right: 4px;
-    
+    right: 5px;
 }
 .done.show {
     display: flex;
+}
+.done2 {
+    display: none;
     position: relative;
-    width: 24px;
-    height: 24px;
-    right: 4px;
+    width: 16px;
+    height: 16px;
+    right: 5px;
+}
+.done2.show{
+    display: flex;
 }
 
-
-.login .campo-pass {
-    top: 511px;
-}
-
-.campos {
-    padding-top: 20px;
-    width: 360px;
-    height: 85px;
-    left: 35px;
-}
 .container-campos{
     display: flex;
     flex-direction: column;
     align-self: center;
     text-align: start;
-    margin-top: 100px;
+    margin-top: 140px;
 }
 
+.campos { 
+    width: 360px;
+    height: 85px;
+    margin-top: 10px;
+}
 
- .div-wrapper {
+.div-wrapper {
     display: flex;
-    
     justify-content: center;
     align-items: center;
-    width: 360px;
-    height: 54px;
-    top: 31px;
-    left: 0;
     border-radius: 15px;
     border: 2px solid;
     border-color: var(--blanco-75);
@@ -396,18 +391,25 @@ body{
     opacity: 0;
 }
 
-.text-wrapper-8 {
-    
+.text-wrapper-8,.opcional {
+    color: var(--blanco);
     font-family: var(--h4-bold-font-family);
     font-weight: var(--h4-bold-font-weight);
-    color: var(--blanco);
     font-size: var(--h4-bold-font-size);
     letter-spacing: var(--h4-bold-letter-spacing);
     line-height: var(--h4-bold-line-height);
-    white-space: nowrap;
     font-style: var(--h4-bold-font-style);
 }
-
+.obligatorio{
+    font-size: var(--h3-font-size);
+    font-family: var(--h3-font-family);
+    font-weight: var(--h3-font-weight);
+    font-style: var(--h3-font-style);
+    color: var(--rojo);
+}
+.opcional{
+    color: var(--blanco-50);
+}
 .logo-login {
     width: 430px;
     height: 258px;
