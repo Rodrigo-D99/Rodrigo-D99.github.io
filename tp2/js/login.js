@@ -16,7 +16,11 @@ function toggleRegistro() {
     document.querySelector(".registro").style.display="flex";
     document.querySelector(".login").style.display="none";
 }
+
+
 document.querySelector("#goToInicioSec").addEventListener("click", toggleIniciar);
+document.querySelector(".button-back").addEventListener("click", toggleIniciar);
+
 function toggleIniciar() {
     document.querySelector(".registro").style.display="none";
     document.querySelector(".login").style.display="flex";

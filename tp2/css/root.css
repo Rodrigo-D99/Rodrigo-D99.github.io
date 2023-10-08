@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--blanco);
+    text-decoration: none;
+}
+:root {
+
+    /*Colores*/
+   --violeta-fondo-psombra1: rgba(15, 0, 38, 1);
+   --violeta-oscuro-psombra2: rgba(39, 0, 102, 1);
+   --violeta-azulado-psombra3: rgba(82, 0, 215, 1);
+   --violeta-primario: rgba(100, 17, 206, 1);
+   --violeta-degradado-pluz1: rgba(147, 39, 255, 0.7);
+   --violeta-claro-pluz2: rgba(197, 138, 255, 1);
+   --negro: rgba(7, 4, 4, 1);
+   --negro-75: rgba(7, 4, 4, 0.75);
+   --negro-25: rgba(7, 4, 4, 0.25);
+   --blanco: rgba(255, 255, 255, 1);
+   --blanco-75: rgba(255, 255, 255, 0.75);
+   --blanco-50: rgba(255, 255, 255, 0.5);
+   --verde: rgba(75, 186, 65, 1);
+   --verde-oferta: rgba(20, 91, 14, 0.7);
+   --azul-claro: rgba(0, 87, 255, 1);
+   --azul: rgb(0, 0, 255);
+   --amarillo: rgba(255, 245, 0, 1);
+   --rojo: rgba(255, 0, 0, 0.75);
+   --rosa: #EE10B0;;
+
+   /*Fuentes H1*/
+   --h1-font-family: "Inter-Bold", Helvetica;
+   --h1-font-weight: 700;
+   --h1-font-size: 40px;
+   --h1-letter-spacing: -0.8px;
+   --h1-line-height: auto;
+   --h1-font-style: normal;
+
+    /*Fuentes H2*/
+   --h2-font-family: "Inter-Bold", Helvetica;
+   --h2-font-weight: 700;
+   --h2-font-size: 32px;
+   --h2-letter-spacing: -0.64px;
+   --h2-line-height: auto;
+   --h2-font-style: normal;
+
+    /*Fuentes H3*/
+   --h3-font-family: "Inter-Bold", Helvetica;
+   --h3-font-weight: 700;
+   --h3-font-size: 24px;
+   --h3-letter-spacing: -0.48px;
+   --h3-line-height: auto;
+   --h3-font-style: normal;
+
+    /*Fuentes H4*/
+   --h4-bold-font-family: "Inter-Bold", Helvetica;
+   --h4-bold-font-weight: 700;
+   --h4-bold-font-size: 18px;
+   --h4-bold-letter-spacing: -0.36px;
+   --h4-bold-line-height: auto;
+   --h4-bold-font-style: normal;
+   --h4-bold-subrallado-font-family: "Inter-Bold", Helvetica;
+   --h4-bold-subrallado-font-weight: 700;
+   --h4-bold-subrallado-font-size: 18px;
+   --h4-bold-subrallado-letter-spacing: -0.36px;
+   --h4-bold-subrallado-line-height: auto;
+   --h4-bold-subrallado-font-style: normal;
+   --h4-regular-font-family: "Inter-Regular", Helvetica;
+   --h4-regular-font-weight: 400;
+   --h4-regular-font-size: 18px;
+   --h4-regular-letter-spacing: -0.36px;
+   --h4-regular-line-height: auto;
+   --h4-regular-font-style: normal;
+
+    /*Fuentes P*/
+   --p1-bold-font-family: "Inter-Bold", Helvetica;
+   --p1-bold-font-weight: 700;
+   --p1-bold-font-size: 14px;
+   --p1-bold-letter-spacing: -0.28px;
+   --p1-bold-line-height: auto;
+   --p1-bold-font-style: normal;
+   --p2-bold-tachado-font-family: "Inter-Regular", Helvetica;
+   --p2-bold-tachado-font-weight: 400;
+   --p2-bold-tachado-font-size: 14px;
+   --p2-bold-tachado-letter-spacing: -0.28px;
+   --p2-bold-tachado-line-height: auto;
+   --p2-bold-tachado-font-style: normal;
+   --p3-regular-font-family: "Inter-Regular", Helvetica;
+   --p3-regular-font-weight: 400;
+   --p3-regular-font-size: 14px;
+   --p3-regular-letter-spacing: -0.28px;
+   --p3-regular-line-height: auto;
+   --p3-regular-font-style: normal;
+   --p4-regular-subrallado-font-family: "Inter-Regular", Helvetica;
+   --p4-regular-subrallado-font-weight: 400;
+   --p4-regular-subrallado-font-size: 14px;
+   --p4-regular-subrallado-letter-spacing: 0px;
+   --p4-regular-subrallado-line-height: auto;
+   --p4-regular-subrallado-font-style: normal;
+
+    /*Sombras*/
+   --sombra-1: 0px 0px 20px 20px rgba(100, 17, 206, 0.5);
+   --collection-1-gris-85: rgba(168, 168, 168, 0.85);
+}
+
+
+body{
+    background: var(--violeta-fondo-psombra1);
+    
+}
