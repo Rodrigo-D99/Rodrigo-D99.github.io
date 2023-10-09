@@ -1,20 +1,118 @@
 "use strict";
-//Menu Responsive
-let burger = document.querySelector(".btn_menu");
-burger.addEventListener("click", () =>
-burger.classList.toggle("active"));
 
-burger.addEventListener("click", toggleMenu);
+document.addEventListener('DOMContentLoaded',function menuOn(){
+//navs
+let main = document.querySelector("main");
+let lista_nav =document.querySelector(".lista_nav");
 
-function toggleMenu() {
-    document.querySelector(".lista_nav").classList.toggle("show");
-}
 
-let perfil = document.querySelector(".btn_perfil").addEventListener("click", toggleMenuPerfil);
-function toggleMenuPerfil() {
-    document.querySelector(".perfil_nav").classList.toggle("show");
-}
-let cart = document.querySelector(".btn_cart").addEventListener("click", toggleMenuCart);
-function toggleMenuCart() {
-    document.querySelector(".cart-box").classList.toggle("show");
-}
+//buttons
+
+
+
+
+let menuBurger = document.querySelector(".btn_menu");
+menuBurger.addEventListener("click", function () {
+    if(perfil_nav.classList.contains("mostrar-menu-usuario")){
+        perfil_nav.classList.toggle("mostrar-menu-usuario");
+        menuPerfil.classList.toggle("cerrar-usuario");
+    }
+    else if(cart_box.classList.contains("mostrar-carrito")){
+        cart_box.classList.toggle("mostrar-carrito");
+        menuCart.classList.toggle("cerrar-usuario");
+    }
+    else if(menuSociales.classList.contains("mostrar_menu_sociales")){
+        menuSociales.classList.toggle("mostrar_menu_sociales");
+
+    }
+    else{
+        main.classList.toggle("segundo-plano");
+    }
+        lista_nav.classList.toggle("mostrar-categorias");
+        menuBurger.classList.toggle("active");
+});
+
+
+let menuPerfil = document.querySelector(".btn_perfil");
+
+let perfil_nav =document.querySelector(".perfil_nav");
+
+menuPerfil.addEventListener("click", function () {
+    if(lista_nav.classList.contains("mostrar-categorias") ){
+        lista_nav.classList.toggle("mostrar-categorias");
+        menuBurger.classList.toggle("active");
+    }
+    else if(cart_box.classList.contains("mostrar-carrito")){
+        cart_box.classList.toggle("mostrar-carrito");
+        menuCart.classList.toggle("cerrar-usuario");
+    }
+    else if(menuSociales.classList.contains("mostrar_menu_sociales")){
+        menuSociales.classList.toggle("mostrar_menu_sociales");
+       
+    }
+
+    else{
+        main.classList.toggle("segundo-plano");
+    }
+    perfil_nav.classList.toggle("mostrar-menu-usuario");
+    menuPerfil.classList.toggle("cerrar-usuario");
+
+});
+
+let menuCart = document.querySelector(".btn_cart");
+
+let cart_box=document.querySelector(".cart-box");
+
+menuCart.addEventListener("click", function () {
+    if(lista_nav.classList.contains("mostrar-categorias") ){
+        lista_nav.classList.toggle("mostrar-categorias");
+        menuBurger.classList.toggle("active");
+    }
+    else if(perfil_nav.classList.contains("mostrar-menu-usuario")){
+        perfil_nav.classList.toggle("mostrar-menu-usuario");
+        menuPerfil.classList.toggle("cerrar-usuario");
+
+    }
+     else if(menuSociales.classList.contains("mostrar_menu_sociales")){
+        menuSociales.classList.toggle("mostrar_menu_sociales");
+    }
+    else{
+        main.classList.toggle("segundo-plano");
+    }
+    cart_box.classList.toggle("mostrar-carrito");
+    menuCart.classList.toggle("cerrar-usuario");
+});
+
+let menuSociales=document.querySelector(".menu-sociales");
+
+let Compartir = document.querySelector(".share_button");
+
+    Compartir.addEventListener("click", function () {
+    if(perfil_nav.classList.contains("mostrar-menu-usuario")){
+        perfil_nav.classList.toggle("mostrar-menu-usuario");
+        menuPerfil.classList.toggle("cerrar-usuario");
+    }
+    else if(cart_box.classList.contains("mostrar-carrito")){
+        cart_box.classList.toggle("mostrar-carrito");
+        menuCart.classList.toggle("cerrar-usuario");
+    }
+    else if(lista_nav.classList.contains("mostrar-categorias") ){
+        lista_nav.classList.toggle("mostrar-categorias");
+        menuBurger.classList.toggle("active");
+    }
+    else{
+        main.classList.toggle("segundo-plano");
+    }
+        
+    menuSociales.classList.toggle("mostrar_menu_sociales");
+   
+});
+
+
+let CerrarCompartir = document.querySelector(".button_x").addEventListener("click", function(){
+    document.querySelector(".menu-sociales ").classList.toggle("mostrar_menu_sociales")
+});
+
+
+});
+

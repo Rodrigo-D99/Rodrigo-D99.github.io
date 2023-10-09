@@ -25,7 +25,8 @@
    --azul: rgb(0, 0, 255);
    --amarillo: rgba(255, 245, 0, 1);
    --rojo: rgba(255, 0, 0, 0.75);
-   --rosa: #EE10B0;;
+   --rosa: #EE10B0;
+   --violeta-linear:linear-gradient(180deg, rgb(85.48, 10.66, 182.75) 0%, rgba(51.49, 15.61, 79.69, 0.9) 100%);
 
    /*Fuentes H1*/
    --h1-font-family: "Inter-Bold", Helvetica;
@@ -105,5 +106,5 @@
 
 body{
     background: var(--violeta-fondo-psombra1);
-    
+    width: 100%;
 }

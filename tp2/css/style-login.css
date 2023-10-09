@@ -128,7 +128,7 @@
 .login .inicio-sesion, .registro .inicio-sesion {
     margin-top: 50px;
     margin-bottom: 40px;
-    background: linear-gradient(180deg, rgb(85.48, 10.66, 182.75) 0%, rgba(51.49, 15.61, 79.69, 0.9) 100%);
+    background: var(--violeta-linear);
     border: 0;
 }
 
@@ -259,14 +259,14 @@
     border-radius: 15px;
     border: 2px solid;
     border-color: var(--blanco-75);
-    background: linear-gradient(180deg, rgb(85.48, 10.66, 182.75) 0%, rgba(51.49, 15.61, 79.69, 0.9) 100%);
+    background: var(--violeta-linear);
 }
 
 .campo {
     width: 340px;
     height: 52px;
     border-radius: 15px;
-    background: linear-gradient(180deg, rgb(85.48, 10.66, 182.75) 0%, rgba(51.49, 15.61, 79.69, 0.9) 100%);
+    background: var(--violeta-linear);
     font-family: var(--h4-regular-font-family);
     font-weight: var(--h4-regular-font-weight);
     color: var(--blanco-50);
@@ -311,7 +311,7 @@
     top: 0;
     left: 0;
     position: absolute;
-    background: linear-gradient(180deg, rgb(85.48, 10.66, 182.75) 0%, rgba(51.49, 15.61, 79.69, 0.9) 100%);
+    background:var(--violeta-linear);
 }
 
 .logo {
@@ -326,7 +326,7 @@
     left: 67px;
     border-radius: 15px;
     position: absolute;
-    background: linear-gradient(180deg, rgb(85.48, 10.66, 182.75) 0%, rgba(51.49, 15.61, 79.69, 0.9) 100%);
+    background:var(--violeta-linear);
 }
 
 .img {
