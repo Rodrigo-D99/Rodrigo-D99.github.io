@@ -173,13 +173,13 @@
     transition: 300ms;
     cursor: pointer;
 }
-.rating{
+.rating,.rating2{
     gap: 10px;
     cursor: pointer;
-
+    display: flex;
 }
 .star{
-    display: flex;
+    
     height: 24px;
     width: 24px;
 }
@@ -265,4 +265,76 @@
   
 }
 
+.sobre_el_juego{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 310px;
+    background-color: var(--violeta-oscuro-psombra2);
+}
+.total_desc,.como_jugar,.video{
+    margin-top: 30px;
+}
+.titulo_desc,.titulo_desc2 {
 
+    height: 50px;
+    font-family: var(--h4-bold-subrallado-font-family);
+    font-weight: var(--h4-bold-subrallado-font-weight);
+    font-size: var(--h4-bold-subrallado-font-size);
+    text-align: left;
+    margin-left: 10px;
+    letter-spacing: var(--h4-bold-subrallado-letter-spacing);
+    line-height: var(--h4-bold-subrallado-line-height);
+    text-decoration: underline;
+    font-style: var(--h4-bold-subrallado-font-style);
+    }
+.titulo_desc2{
+    text-align: center;
+}
+.descripcion,.descripcion2 {
+    text-align: center;
+    margin-left: 30px;
+    width: 400px;
+    height: 100px;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    line-height: 14px;
+    }
+    .descripcion .span{
+        margin-left: 0px;
+    }
+    .video .descripcion2{
+        height: 0px;
+    }
+.span {
+    margin-left: 30px;
+    letter-spacing: var(--p4-regular-subrallado-letter-spacing);
+    text-decoration: underline;
+    font-family: var(--p4-regular-subrallado-font-family);
+    font-style: var(--p4-regular-subrallado-font-style);
+    font-weight: var(--p4-regular-subrallado-font-weight);
+    line-height: var(--p4-regular-subrallado-line-height);
+    font-size: var(--p4-regular-subrallado-font-size);
+    }
+.valoracin{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.video{
+    display: flex;
+    flex-direction: column; 
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+}
+.video_ilustrativo {
+    
+    width: 220px;
+    height: 126px;
+
+    }
+
+.play{
+    position: absolute;
+}
