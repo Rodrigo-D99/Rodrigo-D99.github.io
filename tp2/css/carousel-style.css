@@ -1,18 +1,8 @@
-* {
-    color: rgb(212, 211, 211);
-    margin: 0px;
-    padding: 0px;
-}
-
-
-body {
-    background-color: rgb(39, 39, 39);
-}
-
+@import "root.css";
 
 .games_carousel {
     position: relative;
-    background-color: rgb(149, 3, 194, .7);
+    background-color: rgb(39, 39, 39);
     height: 400px;
     width: fit-content;                                                 /*1280*/
     display: flex;
