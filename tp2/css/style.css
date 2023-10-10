@@ -269,7 +269,7 @@ header .search {
     display: flex;
     width: 360px;
 }
-.text{
+.text,.text_carrito{
     display: flex;
     flex-direction: column;
     width: 57%;
