@@ -159,6 +159,7 @@ body {
 .cardM1:hover .cardM1_info {
     border-bottom: 3px solid rgba(204, 0, 255);
     margin-bottom: 0px;
+    height: 73px;
 }
 
 .cardM1_img {
@@ -169,6 +170,64 @@ body {
 
 .cardM1 img {
     width: 100%;
+}
+
+.cart {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(122, 122, 122, 0.7);
+    top: 30px;
+    right: 5px;
+    border-radius: 20px;
+}
+
+.cart .cart_img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/cart.png);
+    background-size:cover
+}
+
+.cart:hover {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 153, 0, 0.7);
+    top: 30px;
+    right: 5px;
+}
+
+.cart:hover .cart_img {
+    width: 33px;
+    height: 34px;
+    position: relative;
+    top: 2px;
+    left: 1px;
+    background-image: url(../img/add_to_cart.png);
+}
+
+.cart.added {
+    background-color: #4BBA41;
+}
+
+.cart.added .cart_img {
+    width: 33px;
+    height: 34px;
+    background-image: url(../img/cart_added.png);
+}
+
+.cart.added:hover .cart_img {
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 .cardM1_info {
