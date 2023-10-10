@@ -21,7 +21,7 @@
     justify-content: center;
     width: 238px;
     height: 42px;
-    top: 1007px;
+    top: 1035px;
     left: 96px;
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
@@ -69,6 +69,9 @@
     cursor: pointer;
     border: 2px solid var(--azul-claro);
     
+}
+.inicio_faceYgoogle{
+    margin-bottom: -40px;
 }
 .inicio-face:hover{
     transition: 600ms;
@@ -406,7 +409,7 @@
     position: absolute;
     width: 360px;
     height: 23px;
-    top: 260px;
+    top: 280px;
     left: 35px;
     font-family: var(--h2-font-family);
     font-weight: var(--h2-font-weight);
@@ -419,5 +422,5 @@
 
 .tituloRegistro{
     position: relative;
-    top: 40px;
+    top: 60px;
 }
