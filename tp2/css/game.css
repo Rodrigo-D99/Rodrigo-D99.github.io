@@ -415,6 +415,7 @@
 .container_comentario{
     display: flex;
     flex-direction: row;
+    justify-content: end;
 }
 .container_comentario .caja{
     margin-top: 20px;
@@ -436,6 +437,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 1100px;
 }
 .text{
     margin-top: 0px;
