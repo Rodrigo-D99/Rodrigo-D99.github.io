@@ -1,8 +1,20 @@
 @import "root.css";
 
+.games_carousel_container {
+    background-color: rgb(255, 255, 255, 0.08);
+    margin-top: 40px;
+}
+
+.games_carousel_container h3 {
+    position: relative;
+    left: 60px;
+    top: 20px;
+    font-size: var(--h3-font-size);
+}
+
 .games_carousel {
     position: relative;
-    background-color: rgb(39, 39, 39);
+    /* background-color: rgb(255, 255, 255, 0.08); */
     height: 400px;
     width: fit-content;                                                 /*1280*/
     display: flex;
