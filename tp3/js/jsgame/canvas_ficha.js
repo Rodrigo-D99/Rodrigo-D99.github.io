@@ -1,7 +1,7 @@
 class canvas_ficha extends canvas_objeto {
     constructor(jugador, id, context, posInicialX, posInicialY, imagen, color) {
         super(jugador, context, posInicialX, posInicialY, imagen, color);
-        this.radio = 37//Math.round(Math.random() * 100);
+        this.radio = 27//Math.round(Math.random() * 100);
         this.borde = 3;
         this.anguloDesde = 0;
         this.anguloHasta = 2 * Math.PI;

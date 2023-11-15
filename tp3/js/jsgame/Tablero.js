@@ -4,7 +4,7 @@ class Tablero {
         this.dificultad = dificultad;
         this.canvas = c;
         this.ctx = ctx;
-        this.tamaniocelda = 80; // Tamaño de celda
+        this.tamaniocelda = 60; // Tamaño de celda
         this.rows = row;
         this.cols = col;
         this.Tablero = new Array(this.rows);
