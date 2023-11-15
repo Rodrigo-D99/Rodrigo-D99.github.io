@@ -1,0 +1,196 @@
+.contenedorJuego{
+    width: 1208px;
+    height: 604px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.imagenVS{
+    width: 372px;
+    height: 77px;
+}
+
+
+.form-jugar{
+    color: var(--fuente-clara);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(89, 4, 158);
+    z-index: 20;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+form.form-jugar > img{
+    margin-top: 30px;
+}
+
+.contenedorJuego form * img{
+    height: 60px;
+    width: 60px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form *{
+    text-align: center;
+    font-size: large;
+}
+
+form * input[type="text"]{
+    margin: 5px auto 10px auto;
+    width: 240px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: unset;
+    font-size: x-large;
+}
+
+
+.contenedorJuego canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.jugador-seleccion{
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-seleccion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+}
+
+#dificultad {
+    display: block;
+    width: fit-content;
+    padding: 3px;
+    margin: 0 auto;
+    /* left: 50%; */
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+} 
+
+
+.opcion-personaje input{
+    position: relative;
+    bottom: 10%;
+    left: 52%;
+    z-index: -1;
+}
+
+.opcion-personaje img{
+    border-radius: 50%;
+}
+
+.opcion-personaje img:hover{
+    box-shadow: 0px 0px 0px 3px rgba(222, 225, 30, 0.75);
+    -webkit-box-shadow: 0px 0px 0px 3px rgba(222, 225, 30, 0.75);
+    -moz-box-shadow: 0px 0px 0px 3px rgba(222, 225, 30, 0.75);
+}
+
+.opcion-personaje input[type="radio"]:checked ~ *{
+
+    box-shadow: 0px 0px 0px 3px rgba(31,183,61,0.75);
+    -webkit-box-shadow: 0px 0px 0px 3px rgba(31,183,61,0.75);
+    -moz-box-shadow: 0px 0px 0px 3px rgba(31,183,61,0.75);
+}
+
+.btn-jugar, #btn-reiniciar, #btn-menu {
+    background-color: rgba(31,183,61,0.75);
+    transition: all 2 ease-in-out;
+    color: var(--fuente-clara);
+    border-radius: 15px;
+    font-size: x-large;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-jugar {
+    width: 95%;
+}
+
+#btn-menu{
+    background-color: rgba(183, 66, 31, 0.75);
+}
+
+.btn-jugar:hover, #btn-reiniciar:hover{
+    background-color: rgba(31, 183, 61, 1);
+}
+
+#btn-menu:hover{
+    background-color: rgba(183, 66, 31, 1);
+}
+
+
+
+.btn-jugar:disabled{
+    background-color: rgb(118, 163, 118);
+    color: var(--fuente-clara);
+}
+
+
+.info-juego{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: fit-content;
+    top: 0%;
+    right: 0;
+    z-index: 20;
+    color: var(--fuente-clara);
+    /* background-color: var(--fondo-juego-info); */
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+.info-juego div{
+    width: fit-content;
+    
+}
+.info-juego * {
+    text-align: left;
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgb(200, 255, 0), 0 0 1em blue, 0 0 0.2em rgb(0, 255, 21);
+    margin: 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    color: rgba(0, 0, 0, 0.90);
+}
+
+
+
+.controles-juego{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    z-index: 40;
+}
+
+.hidden{
+    display: none;
+    z-index: -5;
+}

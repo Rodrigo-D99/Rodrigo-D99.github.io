@@ -1,0 +1,296 @@
+@import "root.css";
+
+.games_carousel_container {
+    background-color: rgb(255, 255, 255, 0.08);
+    margin-top: 40px;
+}
+
+.games_carousel_container h3 {
+    position: relative;
+    left: 60px;
+    top: 20px;
+    width: fit-content;
+    font-size: var(--h3-font-size);
+}
+
+.games_carousel {
+    position: relative;
+    /* background-color: rgb(255, 255, 255, 0.08); */
+    height: 400px;
+    width: fit-content;                                                 /*1280*/
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+.carousel_container {  
+    height: auto;
+    /* width: calc(5 * 230px);  */  
+    width: calc(2 * 230px);                             
+    /* background: #9503c283; */
+    position: relative;
+    margin-bottom: 8px;                                                              /*pa centrar el carrosel*/
+    overflow: hidden;
+}
+   
+/**/
+.btn_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    height: 68px;
+    width: 40px;
+    /* background-color: rgba(240, 255, 255, 0.233); */
+    top: calc(50% - 40px);
+    cursor: auto;
+    transition: .2s;
+}
+
+.btn_container.on{
+    cursor: pointer;
+}
+
+.btn_carousel {
+    position: absolute;
+    z-index: 1;
+    height: 40px;
+    width: 40px;
+    border-left: 8px solid rgb(153, 121, 126);
+    border-top: 8px solid rgb(153, 121, 126);
+    transition: .2s;
+}
+
+.btn_container.on .btn_carousel {
+    border-left: 8px solid rgb(243, 57, 88);
+    border-top: 8px solid rgb(255, 57, 90);
+}
+
+.btn_container.on:hover .btn_carousel {
+    border-left: 8px solid rgb(255, 116, 139);
+    border-top: 8px solid rgb(255, 116, 139);
+}
+
+.btn_container.on:hover {
+    transform: scale(1.2);
+}
+
+.btn_carousel.btn_prev {
+    transform: rotate(-45deg);
+    left: 10px;
+}
+
+.btn_carousel.btn_next {
+    transform: rotate(135deg);
+    right: 10px;
+}
+
+
+.carousel_container .carousel {
+    display: flex;
+    /* width: 300%; */
+    width: 800%;
+    height: 100%; 
+    transition: .6s;
+} 
+
+.carousel_container .carousel .cardM1 {
+    /* height: 350px; */
+    margin: auto 10px;
+    /* display: grid; */
+    place-items: center;
+    /* width: calc(2.5% - 20px); */
+}
+
+
+
+@media only screen and (min-width: 1050px) {
+
+    .carousel_container {  
+        width: calc(4 * 230px);                                                                    
+    }
+
+    .carousel_container .carousel {
+        width: 400%;
+    } 
+      
+    .btn_container {       
+        width: 40px;      
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+    .carousel_container {  
+        width: calc(6 * 230px);                                                                      
+    }
+
+    .carousel_container .carousel {
+        width: 300%;
+    } 
+      
+    .btn_container {       
+        width: 40px;      
+    }
+
+}
+        
+    
+/* card    -----------------------------------------------------------------------------------------*/
+
+.cardM1 {                      /* probar poner bottom -10px y que el info este a una distancia de top y no de bottom*/
+    position: relative;
+    width: 210px;
+    height: 350px;
+    color: #00000000;
+    transition: .3s;
+    display: block;
+    cursor: pointer;
+    margin-left: 0px;
+    transition: .3s;
+}
+
+.cardM1:hover {
+    filter:opacity(.8);
+}
+
+.cardM1:hover .cardM1_img {
+    top: 0px;
+}
+
+.cardM1:hover .cardM1_info {
+    border-bottom: 3px solid rgba(204, 0, 255);
+    margin-bottom: 0px;
+    height: 73px;
+}
+
+.cardM1_img {
+    position: relative;
+    top: 8px;
+    transition: .2s;
+}
+
+.cardM1 img {
+    width: 100%;
+}
+
+.cart {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(122, 122, 122, 0.7);
+    top: 30px;
+    right: 5px;
+    border-radius: 20px;
+}
+
+.cart .cart_img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/cart.png);
+    background-size:cover
+}
+
+.cart:hover {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 153, 0, 0.7);
+    top: 30px;
+    right: 5px;
+}
+
+.cart:hover .cart_img {
+    width: 33px;
+    height: 34px;
+    position: relative;
+    top: 2px;
+    left: 1px;
+    background-image: url(../img/add_to_cart.png);
+}
+
+.cart.added {
+    background-color: #4BBA41;
+}
+
+.cart.added .cart_img {
+    width: 33px;
+    height: 34px;
+    background-image: url(../img/cart_added.png);
+}
+
+.cart.added:hover .cart_img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.cardM1_info {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0px;
+    margin-bottom: 3px;  /* robe 3 px de img  */
+    background-color: rgb(100, 17, 206);
+    
+}
+
+.cardM1_name {
+    position: relative;
+    display: flex;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.cardM1_name p {
+    position: relative;
+    left: 5px;
+    font-size: 20px;
+}
+
+.cardM1_status {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0px;
+}
+
+.cardM1_status .cardM1_offer{
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: rgb(20, 91, 14, .7);
+    justify-content: center      /* X */
+}
+
+.cardM1_status .cardM1_offer p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #4BBA41;
+}
+
+.cardM1_status .cardM1_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    width: 110px;
+    height: 100%;
+}
+
+.old_price {
+    text-decoration: line-through;
+}
