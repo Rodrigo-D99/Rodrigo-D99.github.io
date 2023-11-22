@@ -135,7 +135,7 @@ class Tablero {
     }
 
     PosicionMouseValidaY(event){
-        return event.offsetY < this.altoTotal + this.posInicialY;
+        return event.offsetY < this.altoTotal-300 + this.posInicialY;
     }
 
     MovimientoValido(col) {

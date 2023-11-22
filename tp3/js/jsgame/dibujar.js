@@ -50,7 +50,7 @@ function init(dificultad, nombre1, ficha1, nombre2, ficha2){
     
     let imagenes = [];
 
-    filas = Number.parseInt(dificultad) +2;
+    filas = Number.parseInt(dificultad) +1;
     columnas = Number.parseInt(dificultad)+2;
     tablero = new Tablero(canvas, ctx, filas, columnas, dificultad);
 
