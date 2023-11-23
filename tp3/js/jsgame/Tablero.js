@@ -10,7 +10,7 @@ class Tablero {
         this.Tablero = new Array(this.rows);
         this.JugarorActual = 'blue';
         this.anchoTotal =  this.tamaniocelda * this.cols;
-        this.altoTotal =  this.tamaniocelda * this.rows;
+        this.altoTotal =  this.rows;
         this.posInicialX = (1288 - this.tamaniocelda * this.cols) / 2;
         this.posInicialY = (644 - this.tamaniocelda * this.rows) / 2;
         this.colorGanador = 'rgb(229, 226, 49)';
@@ -135,7 +135,7 @@ class Tablero {
     }
 
     PosicionMouseValidaY(event){
-        return event.offsetY < this.altoTotal-300 + this.posInicialY;
+        return event.offsetY < this.altoTotal + this.posInicialY;
     }
 
     MovimientoValido(col) {
