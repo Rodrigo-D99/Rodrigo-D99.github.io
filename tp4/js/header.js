@@ -44,9 +44,9 @@ function newTransition() {
   }
 }
 
-/*
+
 let data = window.performance.getEntriesByType("navigation")[0].type;
 if(data == "reload"){
-  const HOME_URL = ""
+  const HOME_URL = "https://rodrigo-d99.github.io/tp4/inicio.html"
   location.href = HOME_URL;
-}*/
+}
