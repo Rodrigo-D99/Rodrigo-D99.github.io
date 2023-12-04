@@ -8,6 +8,13 @@ menuBtn.addEventListener("click", function(){
   for (let index = 0; index < opcionesMenu.length; index++) {
     opcionesMenu[index].classList.toggle("desplegar-menu-btn");
   }
+  for (let index = 0; index < opcionesMenu.length; index++) {
+    opcionesMenu[index].style.transition = `all ${0.2 + index / 7}s ease-in-out`;
+    opcionesMenu[index].style.top = `${105 + index * 56.25}px`;
+  }
+  setTimeout(() => {
+    newTransition();
+  }, 700);
 });
 
 window.onscroll = function() {scrollFunction()};
@@ -29,12 +36,13 @@ function scrollFunction() {
 }
 
 
-document.addEventListener('DOMContentLoaded', function agregarTransicion() {
+
+
+function newTransition() {
   for (let index = 0; index < opcionesMenu.length; index++) {
-    opcionesMenu[index].style.transition = `all ${0.3 + index / 7}s ease-in-out`;
-    opcionesMenu[index].style.top = `${105 + index * 56.25}px`;
+    opcionesMenu[index].style.transition = `all ${0.2}s ease-in-out`;
   }
-});
+}
 
 /*
 let data = window.performance.getEntriesByType("navigation")[0].type;

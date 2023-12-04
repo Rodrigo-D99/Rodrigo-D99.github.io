@@ -8,12 +8,12 @@ let xValue = 0,
 
 body.addEventListener("mousemove", (e) => {
     if(movimientoSegunLaPosDelMouse(viewBox, 0)){
-        xValue = e.clientX - window.innerWidth / 2;
-        yValue = e.clientY - window.innerHeight / 2;
+        xValue = e.clientX - window.innerWidth / 3;
+        yValue = e.clientY - window.innerHeight / 3;
         vengadoresImagenes.forEach(img => {
             let speedX = img.dataset.speedx;
             let speedY = img.dataset.speedy;
-            img.style.transform = 'translate(calc(-50% + ' + -xValue * speedX +  'px), calc(-50% + '+ -yValue * speedY +'px))';
+            img.style.transform = 'translate(calc(-50% + ' + -xValue * speedX +  'px), calc(-50% + '+ (-yValue * speedY) +'px))';
         });
     }
 });
