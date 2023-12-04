@@ -1,0 +1,410 @@
+main{
+    margin-top: 63px;
+}
+
+
+#section1{
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(../img/Fondo1x2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#conoce-a-spidey{
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    background-image: url(../img/fondoDuende.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.columna{
+    width: 1080px;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+.columna1{
+    width: 1280px;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+#conoce-a-spidey .columna{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#texto-spidey-amigos{
+    max-width: 70%;
+    color: var(--blanco);
+}
+
+#texto-spidey-amigos h4{
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+#texto-spidey-amigos p{
+    font-size: 20px;
+}
+
+#duende{
+    margin-top: -160px;
+    padding-bottom: 130px;
+    margin-left: -128px;
+    transform: translateX(-128px);
+}
+
+
+#cards{
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#cards div{
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards div p{
+    font-size: 20px;
+    max-width: 90%;
+}
+.movx1{
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 2s, transform 1s;
+}
+.movx1.visible{
+    width: 356px;
+    height: 532px;
+    opacity: 1;
+    transform: scale(1);
+
+}
+.movx2{
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 3.2s , transform 1.8s;
+}
+.movx2.visible{
+    width: 356px;
+    height: 532px;
+    opacity: 1;
+    transform: scale(1);
+
+}
+.movx3{
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 4.2s, transform 2.4s;
+}
+.movx3.visible{
+    width: 356px;
+    height: 532px;
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+
+
+
+#columna-gameplay{
+    max-width: 500px;
+    perspective: 500px;
+    position: inherit;
+    padding-left: 35px;
+    margin-top: -90px;
+}
+
+#ghost{
+    background-image: url(../img/spidermanM.jpg);
+    margin-top: 10%;
+    height: 44vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#ghost1, #ghost2, #ghost3{
+    border-radius: 20px;
+    object-fit: cover;
+    transform-origin: 100% 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+#ghost1{
+    transform: rotateY(20deg) rotateZ(-20deg);
+    height: 180px;
+    width: 350px;
+} 
+
+#ghost2{
+    transform: rotateY(20deg) rotateZ(-25deg) translateY(-22px);
+    height: 180px;
+    width: 350px;
+} 
+
+#ghost3{
+    height: 162px;
+    width: 324px;
+    transform: rotateY(32deg) rotateZ(-28deg) rotateX(28deg)translateY(-42px) translateX(10px);
+}
+
+#ghost1:hover{
+    transform-origin: center center;
+    transform: rotateY(20deg) rotateZ(-17deg) scale(1.2);
+}
+
+#ghost2:hover{
+    transform-origin: center center;
+    transform: rotateY(20deg) rotateZ(-20deg) translateY(-22px) scale(1.2);
+}
+
+#ghost3:hover{
+    transform-origin: center center;
+    transform: rotateY(10deg) rotateZ(-20deg) translateY(-22px) scale(1.4);
+}
+
+
+#vengadores{
+    background-image: url(../img/vengadoresFondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vw;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+   
+}
+#div_vengador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+#vengadores #columnaVengadores{
+    color: var(--blanco);
+    font-size: 60px;
+    position: relative;
+    width: 1070px;
+    height: 530px;
+    overflow: hidden;
+}
+#vengadores h4{
+    color: white;
+    margin-left: -500px;
+    font-size: 50px;
+    max-width: 25%;   
+}
+
+#vengadores #columnaVengadores img:nth-child(2){
+    width: 1080px;
+    box-shadow: 26px 29px 41px 14px rgba(0, 0, 0, 0.15);
+}
+#Arbusto, #Plantas,#cielo, #vengador1, #vengador1, #vengador2, #vengador3{
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+#cielo{
+    top: 265px;
+    right: -739px;
+    width: 1277px;
+    z-index: 1;
+    object-fit: cover;
+}
+#Arbusto, #Plantas{
+    Width:1080px;
+    Height:528px;  
+    top: 265px;
+    right: -550px;
+}
+#Arbusto{
+    z-index: 1;
+}
+#Plantas{
+    z-index: 4;
+}
+#vengador1{
+    z-index: 1;
+    Width: 456px;
+    Height: 476px;
+    margin-left: 1150px;
+    margin-top: 650px;
+    
+}
+#vengador2{
+    margin-top: 650px;
+    margin-left: 100px;
+    z-index: 1;
+    Width: 560px;
+    Height: 666px;
+}
+#vengador3{
+    transform: rotateZ(2deg);
+    z-index: 5;
+    Width: 368px;
+    Height: 552px;
+    margin-bottom: 420px;
+    margin-left: 200px;
+}
+
+#masAmigos img{
+    width: 552px;
+    height: 303px;
+}
+
+div.amigosItem{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#masAmigosT{
+    font-size: 60px;
+    position: relative;
+    
+}
+div.amigosT h4{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+div.amigosT p{
+    font-size: 20px;
+    margin: 0;
+}
+
+
+
+div#amigosTextArea{
+    width: 43%;
+}
+
+div#amigosTextArea div:nth-child(4){
+    padding-bottom: 50px;
+}
+div#amigosImgs{
+    width: 51%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 200px;
+    height: fit-content;
+}
+@keyframes mostrar{
+    from{
+        opacity: 0;
+        scale: 0%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+
+}
+.amigosT{
+    view-timeline-name: --texto;
+    view-timeline-axis: block;
+    animation-timeline: --texto;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+#amigosImgs img{
+    position: absolute;
+    opacity: 0; /* Inicialmente, todas las imágenes son transparentes */
+    transition: opacity 0.5s ease-in-out;
+}
+
+#amigos-img-container{
+    width: 51%;
+    padding-bottom: 365px;
+}
+
+#amigosImgs img:nth-child(1){
+    opacity: 1;
+}
+
+.amigosT{
+    padding-bottom: 500px;
+}
+
+
+#frase{
+    background-image: url(../img/fraseFondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vw;
+    color: var(--blanco);
+}
+
+#frase div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+    font-size: 60px;
+}
+
+#frase .columna h4{
+    max-width: 75%;
+}
+
+#frase .columna button{
+    width: 303px;
+}
+
+#trianguloVioleta{
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 15.23vw;
+    z-index: 200;
+    max-height: 90px;
+}
+
+@media only screen and (max-width: 1400px){
+    #section1{
+        background-image: url(../img/Fondo1x2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #keyart-1{
+        position: absolute;
+        height: 720px;
+        width: 1280px;
+        margin: 0;
+        background-image: url(../img/edificiosSuscripcion2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2;
+        
+        
+    }
+    .columna1{
+        width: 1280px;
+        margin: 0 ;
+        max-width: 1280px;
+    }
+}
