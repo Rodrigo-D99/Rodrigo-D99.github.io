@@ -24,7 +24,6 @@ body{
 
     40%{
         transform:rotate(340deg);
-        opacity: 0.5;
     }
 
     100% {
